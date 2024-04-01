@@ -16,7 +16,7 @@ avg. Upstream-Bandwith: 257.69Mbit/s
 
 Network: 192.168.2.0/24
 
-DHCP-Range: 192.168.2.100 - 192.168.2.230
+DHCP-Range: 192.168.2.101 - 192.168.2.230
 
 DHCP-Leasetime: 1 day
 
@@ -31,7 +31,7 @@ That means there are no VLANs in my Network, but there surely will be in further
 ## Raspberry Pi 5
 Architecture: ARM
 
-CPU: Broadcom BCM2712 quad-core Arm Cortex A76 processor @ 2.4GHz
+CPU: Broadcom BCM2712 quad-core Cortex A76 @ 2.4GHz
 
 microSD-Storage: 64GB
 
@@ -42,9 +42,16 @@ OS: Raspberry Pi OS 64-bit
 
 ### Services running on my Pi
 1. Docker-ce
-2. Dockge # not Portainer because I don't have multiple server where Kubernetes would be great and Homeassistant-Supervised doesn't like giving away it's privliges
-3. 
+2. Docker-compose
+3. Portainer
+4. Pihole
+5. heimdall
+6. Homeassistant Supervised
+7. Open vpn #not final
+8. many many Cloudflared-container
+9. Speedtesttracker
 
+All of my services are published to the internet via the above mentioned Cloudflared Tunnels. Those are able to expose services without opening any ports nor having to deal with ddos-protection or firewalling because Cloudflare is the firewall in that case.
 
 
 <!---
