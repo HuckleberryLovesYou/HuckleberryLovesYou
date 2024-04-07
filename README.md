@@ -51,7 +51,16 @@ OS: Raspberry Pi OS 64-bit
 8. many many Cloudflared-container
 9. Speedtesttracker
 
-All of my services are published to the internet via the above mentioned Cloudflared Tunnels. Those are able to expose services without opening any ports nor having to deal with ddos-protection or firewalling because Cloudflare is the firewall in that case.
+All of my services are published to the internet via the above mentioned Cloudflared Tunnels.
+Those are able to expose services without opening any ports nor having to deal with ddos-protection or firewalling because Cloudflare is the firewall in that case.
+Also the Cloudfared Tunnels are secured with ther own OAuth-Authentication using the integrated service.
+
+## Synology DS218+ (NAS)
+My NAS is a Synology DS218+ running in RAID 1 with 2x2TB HDDs
+To reach the NAS I can either use the DDNS entry domain or use a dedicated cloudlfared tunnel.
+Using the cloudflared tunnel my Raspberry Pi is communicating over the HTTPS-Port (5001).
+It's secured with username:password aswell as 2FA.
+
 
 
 <!---
