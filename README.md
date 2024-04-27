@@ -1,5 +1,5 @@
 - 👋 Hi, I’m Tim Matheis
-- 👀 I’m currently wokring in the Networking Segment
+- 👀 I’m currently working in the Networking Segment
 - 🌱 I’m currently learning Debian
 - 📫 How to reach me: mail@timmatheis.de
 
