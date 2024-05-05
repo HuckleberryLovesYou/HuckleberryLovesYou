@@ -5,8 +5,6 @@
 
 
 # My Homelab
-I though I just share my Homelab here.  Right now I'm only running a Raspberry Pi 5 and a Synology DS218+ (NAS) in my Homelab, except my Router and a Switch
-
 ## Router
 Nothing crazy just a normal Speedport Smart 3
 
