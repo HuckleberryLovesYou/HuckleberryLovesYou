@@ -20,12 +20,14 @@ DHCP-Leasetime: 1 day
 
 DNS-Upstreamserver: 8.8.8.8
 
-
+# Network
 ## Switch
-It's a 24 RJ-45 1G non-PoE unmanaged Switch.
+Main-Switch:
+  24 Port Base1000 non-PoE unmanaged rack-mounted Switch
 
-That means there are no VLANs in my Network, but there surely will be in further future.
-
+Second PoE-Swtich:
+  8 Port Base1000 PoE+ managed not rack-mounted Switch
+# Server
 ## Raspberry Pi 5
 Architecture: ARM
 
@@ -38,25 +40,33 @@ RAM: 4GB
 OS: Raspberry Pi OS 64-bit
 
 
-### Services running on my Pi
-1. Docker-ce
-2. Docker-compose
-3. Portainer
-4. Pihole
-5. heimdall
-6. Homeassistant Supervised
-7. Open vpn #not final
-8. many many Cloudflared-container
-9. Speedtesttracker
+### Docker Container running on my Pi
+1. Homarr Dashboard
+2. Bitwarden / Vaultwarden
+3. Uptime Kuma
+4. Portainer
+5. Pihole
+6. heimdall
+7. Homeassistant Supervise
+8. Speedtesttracker
+9. Cloudflared-container for most applications
 
 All of my services are published to the internet via the above mentioned Cloudflared Tunnels.
 Those are able to expose services without opening any ports nor having to deal with ddos-protection or firewalling because Cloudflare is the firewall in that case.
-Also the Cloudfared Tunnels are secured with ther own OAuth-Authentication using the integrated service.
+Also the Cloudfared Tunnels are secured with ther own OAuth-Authentication using a integrated service.
+
+## Dell Mini-Computer (pve)
+Most of the time, this is my playground for any hosting project I want to do.
+It's running Proxmox 8.x.x
+### Tests I already did
+1. wazuh Endpoint Protection
+2. Windows 11 VM for remote access over the web console
+3. Ubuntu server 24.04 LTS for remote shell over the web console
 
 ## Synology DS218+ (NAS)
 My NAS is a Synology DS218+ running in RAID 1 with 2x2TB HDDs
-To reach the NAS I can either use the DDNS entry domain or use a dedicated cloudlfared tunnel.
-Using the cloudflared tunnel my Raspberry Pi is communicating over the HTTPS-Port (5001).
+To reach the NAS I can either use the DDNS entry domain directly configured on the NAS or use a dedicated cloudlfared tunnel.
+Using the cloudflared tunnel my Raspberry Pi is communicating over the HTTPS-Port (5001) with the NAS.
 It's secured with username:password aswell as 2FA.
 
 
