@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Tim Matheis
-- 👀 I’m currently working in the Networking Segment
-- 🌱 I’m currently learning Debian
+- 👀 I’m currently working as a Network Engineer Trainee
+- 🌱 I’m currently learning Python
 - 📫 How to reach me: mail@timmatheis.de
 
 
@@ -8,7 +8,7 @@
 ## Router
 Nothing crazy just a normal Speedport Smart 3
 
-It is being DHCP-Server, DNS-Server, Access Point and Switch on my Network
+It's DHCP-Server, DNS-Server, Access Point and Switch on my Network
 
 avg. Upstream-Bandwith: 257.69Mbit/s
 
