@@ -1,5 +1,5 @@
 # 💫 About Me:
-<br>    👋 Hi, I’m Tim Matheis<br>    👀 I’m currently working as a Network Engineer Trainee<br>    🌱 I’m currently learning Python<br>    📫 How to reach me: mail@timmatheis.de
+<br>    👋 Hi, I’m Tim Matheis<br>    👀 I’m currently working as a Network Engineer Trainee<br>    🌱 I’m currently learning Python<br>    📫 How to reach me: mail@timmatheis.com
 
 
 # 💻 Tech Stack:
